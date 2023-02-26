@@ -1,0 +1,44 @@
+@layout('layout')
+@set('title', 'Sign Up')
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+                <div class="card-body p-4 p-sm-5">
+                    <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
+                    <form method="post" action="{{ route('signup.submit') }}" novalidate class="needs-validation">
+                        <div class="form-floating mb-3">
+                            <input name="email" type="email" class="form-control" placeholder="name@example.com" required>
+                            <label>Email address</label>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="password" type="password" class="form-control" placeholder="Password" required>
+                            <label>Password</label>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-success text-uppercase fw-bold" type="submit">
+                                Sign Up
+                            </button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="d-grid mb-2">
+                            <a href="" class="btn btn-danger text-uppercase fw-bold">
+                                <i class="fab fa-google me-2"></i> Sign Up with Google
+                            </a>
+                        </div>
+                        <div class="d-grid">
+                            <a href="" class="btn btn-primary text-uppercase fw-bold">
+                                <i class="fab fa-facebook-f me-2"></i> Sign Up with Facebook
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@end
