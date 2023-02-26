@@ -11,11 +11,20 @@
                     <p class="text-center">Hey, looks like you need to get the instructions again.</p>
 
                     <form method="post" action="{{ route('verifyEmail.instructions.send') }}" novalidate
-                         class="needs-validation">
+                         class="needs-validation
+                            @if(flashMessages.has('errors')) 
+                            {{ 'was-validated' }} 
+                            @end
+                         "
+                    >
                         <div class="form-floating mb-3">
                             <input name="email" type="email" class="form-control" placeholder="name@example.com" required>
                             <label>Email address</label>
-                            <div class="invalid-feedback"></div>
+                            <div class="invalid-feedback">
+                                @if(flashMessages.has('errors.email'))
+                                    {{ flashMessages.get('errors.email') }}
+                                @end
+                            </div>
                         </div>
                         <div class="d-grid">
                             <button class="btn btn-primary text-uppercase fw-bold" type="submit">
