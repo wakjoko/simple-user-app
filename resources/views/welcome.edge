@@ -2,17 +2,17 @@
 @set('title', 'Welcome')
 
 @section('content')
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card border-0 shadow rounded-3 my-5">
-        <div class="card-body p-4 p-sm-5">
-          <h5 class="card-title text-center mb-5 fw-light fs-5">Welcome</h5>
-          <p class="text-center">Please <a href="{{ route('signup.show') }}" class="text-decoration-none">sign up</a> or <a href="{{ route('signin.show') }}" class="text-decoration-none">sign in</a> to start.</p>
-          <p class="text-center">Incase you've signed up and having problem signing in. Most probably you may forgot to verify your email, you can always <a href="{{ route('verifyEmail.instructions.show') }}" class="text-decoration-none">get the instructions again</a>.</p>
+<div class="row g-0 app-auth-wrapper">
+    <div class="d-flex flex-column align-content-end">
+        <div class="m-auto text-center">
+            <h1 class="text-center mb-5">Welcome</h1>
+            <p>Please <a href="{{ route('signup.show') }}" class="text-decoration-none">sign up</a> or <a href="{{ route('signin.show') }}" class="text-decoration-none">sign in</a> to start.</p>
+            <p class="mb-0">Incase you've signed up and having problem signing in.</p>
+            <p>Most probably you may forgot to verify your email, you can always get a new verification link <a href="{{ route('link.show') }}" class="text-decoration-none">here</a>.</p>
         </div>
-      </div>
+        <footer class="app-auth-footer">
+          @include('components/license')
+        </footer>
     </div>
-  </div>
 </div>
 @end

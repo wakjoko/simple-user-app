@@ -1,7 +1,7 @@
 import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 
-export default class VerifyEmailController {
+export default class DashboardController {
   public async show({ view }: HttpContextContract) {
-    return view.render('verifyEmail/show');
+    return view.render('dashboard');
   }
 }
