@@ -44,9 +44,10 @@ const databaseConfig: DatabaseConfig = {
       },
       migrations: {
         naturalSort: true,
+        disableRollbacksInProduction: Env.get('NODE_ENV') != 'production',
       },
       healthCheck: false,
-      debug: false,
+      debug: Env.get('NODE_ENV') != 'production',
     },
 
   }
