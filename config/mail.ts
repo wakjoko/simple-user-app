@@ -52,5 +52,9 @@ export default mailConfig({
 				type: 'login',
 			}
     },
+    sendinblue: {
+      driver: 'sendinblue',
+      apiKey: Env.get('SENDINBLUE_API_KEY')
+    },
   },
 })
