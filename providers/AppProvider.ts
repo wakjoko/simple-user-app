@@ -1,6 +1,8 @@
 import type { ApplicationContract } from '@ioc:Adonis/Core/Application'
 
 export default class AppProvider {
+  public static needsApplication = true
+
   constructor (protected app: ApplicationContract) {
   }
 
@@ -9,7 +11,12 @@ export default class AppProvider {
   }
 
   public async boot () {
-    // IoC container is ready
+    const { SendinblueDriver } = await import('../drivers/sendinblue/driver')
+    const Mail = this.app.container.use('Adonis/Addons/Mail')
+
+    Mail.extend('sendinblue', (_mail, _mapping, config) => {
+      return new SendinblueDriver(config)
+    })
   }
 
   public async ready () {
