@@ -1,7 +1,6 @@
 import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 import User from "App/Models/User";
 import { DateTime } from 'luxon'
-import Event from '@ioc:Adonis/Core/Event'
 
 export default class OauthController {
   public async redirect({ ally, params }: HttpContextContract) {
@@ -89,13 +88,6 @@ export default class OauthController {
      */
     if (!user.password) {
       session.flash('warning.empty_password', "Heads up! Don't forget to set your password. I bet you'll need it later.")
-    }
-
-    if (auth.isLoggedIn && auth.user) {
-      /**
-       * Update last active timestamp
-       */
-      Event.emit('user:active', auth.user)
     }
 
     /** 
