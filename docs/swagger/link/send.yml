@@ -1,0 +1,20 @@
+/api/link/get:
+  post:
+    tags:
+        - Unauthenticated
+    description: Get A Link To Verify Email
+    requestBody:
+      required: true
+      content:
+          application/json:
+            schema:
+              properties:
+                email:
+                  type: string
+                  example: 'johndoe@aha-assessment.test'
+                  required: true
+    responses:
+      200:
+        description: Ok
+      403:
+        description: Forbidden

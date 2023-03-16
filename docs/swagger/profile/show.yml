@@ -1,0 +1,10 @@
+/api/profile:
+  post:
+    tags:
+        - Authenticated
+    description: My Profile
+    responses:
+      200:
+        description: Ok
+      401:
+        description: Unauthorized

@@ -1,0 +1,8 @@
+/api/signout:
+  post:
+    tags:
+        - Authentication
+    description: Sign Out
+    responses:
+      200:
+        description: Ok
