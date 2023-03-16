@@ -41,12 +41,12 @@
                         <hr class="my-4">
                         <p class="auth-option text-center">Need fast lane? Try signing up with social accounts.</p>
                         <div class="d-grid mb-2">
-                            <a href="#" class="btn btn-danger fw-bold">
+                            <a href="{{ route('oauth.redirect', {provider: 'google'}) }}" class="btn btn-danger fw-bold">
                                 <i class="fab fa-google me-2"></i> Sign Up with Google
                             </a>
                         </div>
                         <div class="d-grid">
-                            <a href="#" class="btn btn-primary fw-bold">
+                            <a href="{{ route('oauth.redirect', {provider: 'facebook'}) }}" class="btn btn-primary fw-bold">
                                 <i class="fab fa-facebook-f me-2"></i> Sign Up with Facebook
                             </a>
                         </div>
