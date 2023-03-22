@@ -1,6 +1,7 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.on('').render('guests/welcome').as('welcome');
+Route.on('privacyPolicy').render('guests/privacyPolicy').as('privacyPolicy');
 
 Route.group(() => {
     Route.group(() => {
