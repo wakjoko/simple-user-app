@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">Aha Assessment App</h3>
+  <h3 align="center">Simple User Stats</h3>
 
   <p align="center">
     Check out the demo app guys!
@@ -35,7 +35,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Dev Guide</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -78,7 +78,7 @@ Coming from Laravel background, I'm choosing AdonisJS for the similarities it br
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Dev Guide
 
 Basically you'll need NodeJs and MySQL installed first then you're good to follow below steps.
 
@@ -92,7 +92,7 @@ Installation is possible without local dependencies relying on [Docker](https://
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:wakjoko/aha-assessment.git
+   git clone git@github.com:wakjoko/simple-user-app.git
    ```
 2. Install NPM packages
    ```sh
@@ -125,12 +125,12 @@ Installation is possible without local dependencies relying on [Docker](https://
 <a name="usage"></a>
 ## Usage
 
-To have a quick showcase of the app, a demo account is provided with below credential. Just please don't change the password so others can use same account later on.
+~~To have a quick showcase of the app, a demo account is provided with below credential. Just please don't change the password so others can use same account later on.~~
 Sessions is set to only 5 minutes so don't be suprised to get logged out when you left browser idle.
 
-Email: johndoe@aha-assessment.test
+~~Email: johndoe@simple-user-app.test~~
 \
-Password: johndoe
+~~Password: johndoe~~
 
 Api docs is available [here](https://spotless-top-hat-moth.cyclic.app/docs).
 It's protected with simple auth to prevent unwanted access.
@@ -162,7 +162,7 @@ Password: pass
 - [x] API Endpoints
 - [ ] Bug Finding
 
-See the [open issues](https://github.com/wakjoko/aha-assessment/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/wakjoko/simple-user-app/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,7 +182,7 @@ Are you kidding me? Don't ask about it, just take it all and do anything you wan
 
 Sahir Taib - [LinkedIn](https://linkedin.com/in/wakjoko) - wakjoko@gmail.com
 
-Codebase: [https://github.com/wakjoko/aha-assessment](https://github.com/wakjoko/aha-assessment)
+Codebase: [https://github.com/wakjoko/simple-user-app](https://github.com/wakjoko/simple-user-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,16 +205,16 @@ Thanks to everyone for your amazing tools and services!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/wakjoko/aha-assessment.svg?style=for-the-badge
-[contributors-url]: https://github.com/wakjoko/aha-assessment/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/wakjoko/aha-assessment.svg?style=for-the-badge
-[forks-url]: https://github.com/wakjoko/aha-assessment/network/members
-[stars-shield]: https://img.shields.io/github/stars/wakjoko/aha-assessment.svg?style=for-the-badge
-[stars-url]: https://github.com/wakjoko/aha-assessment/stargazers
-[issues-shield]: https://img.shields.io/github/issues/wakjoko/aha-assessment.svg?style=for-the-badge
-[issues-url]: https://github.com/wakjoko/aha-assessment/issues
-[license-shield]: https://img.shields.io/github/license/wakjoko/aha-assessment.svg?style=for-the-badge
-[license-url]: https://github.com/wakjoko/aha-assessment/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/wakjoko/simple-user-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/wakjoko/simple-user-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wakjoko/simple-user-app.svg?style=for-the-badge
+[forks-url]: https://github.com/wakjoko/simple-user-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/wakjoko/simple-user-app.svg?style=for-the-badge
+[stars-url]: https://github.com/wakjoko/simple-user-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wakjoko/simple-user-app.svg?style=for-the-badge
+[issues-url]: https://github.com/wakjoko/simple-user-app/issues
+[license-shield]: https://img.shields.io/github/license/wakjoko/simple-user-app.svg?style=for-the-badge
+[license-url]: https://github.com/wakjoko/simple-user-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wakjoko
 [AdonisJS.com]: https://img.shields.io/badge/adonisjs-%23220052.svg?style=for-the-badge&logo=adonisjs&logoColor=white
