@@ -56,9 +56,15 @@
 
 [Explore the App](https://spotless-top-hat-moth.cyclic.app)
 
-This is a simple app where users can sign up and sign in from a landing page into a simple dashboard. The landing page can be blank with only two separate links to “Sign Up” and “Sign In”. The simple dashboard can only be accessed after the user signs up or signs in.
+An app where anyone can sign up or sign in via Google or Facebook then gets a simple user stats dashboard.
 
-Api docs is available [here](https://spotless-top-hat-moth.cyclic.app/docs)
+Api docs is available [here](https://spotless-top-hat-moth.cyclic.app/docs).
+
+It's protected with simple auth to prevent unwanted access.
+
+Username: user
+\
+Password: pass
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +98,7 @@ Installation is possible without local dependencies relying on [Docker](https://
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:wakjoko/simple-user-app.git
+   git clone git@github.com:wakjoko/simple-user-stats.git
    ```
 2. Install NPM packages
    ```sh
@@ -121,28 +127,6 @@ Installation is possible without local dependencies relying on [Docker](https://
 
 
 
-<!-- USAGE EXAMPLES -->
-<a name="usage"></a>
-## Usage
-
-~~To have a quick showcase of the app, a demo account is provided with below credential. Just please don't change the password so others can use same account later on.~~
-Sessions is set to only 5 minutes so don't be suprised to get logged out when you left browser idle.
-
-~~Email: johndoe@simple-user-app.test~~
-\
-~~Password: johndoe~~
-
-Api docs is available [here](https://spotless-top-hat-moth.cyclic.app/docs).
-It's protected with simple auth to prevent unwanted access.
-
-Username: user
-\
-Password: pass
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -161,8 +145,9 @@ Password: pass
 - [x] User Statistics
 - [x] API Endpoints
 - [ ] Bug Finding
+- [ ] Upgrade to AdonisJs V6
 
-See the [open issues](https://github.com/wakjoko/simple-user-app/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/wakjoko/simple-user-stats/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,7 +167,7 @@ Are you kidding me? Don't ask about it, just take it all and do anything you wan
 
 Sahir Taib - [LinkedIn](https://linkedin.com/in/wakjoko) - wakjoko@gmail.com
 
-Codebase: [https://github.com/wakjoko/simple-user-app](https://github.com/wakjoko/simple-user-app)
+Codebase: [https://github.com/wakjoko/simple-user-stats](https://github.com/wakjoko/simple-user-stats)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,16 +190,16 @@ Thanks to everyone for your amazing tools and services!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/wakjoko/simple-user-app.svg?style=for-the-badge
-[contributors-url]: https://github.com/wakjoko/simple-user-app/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/wakjoko/simple-user-app.svg?style=for-the-badge
-[forks-url]: https://github.com/wakjoko/simple-user-app/network/members
-[stars-shield]: https://img.shields.io/github/stars/wakjoko/simple-user-app.svg?style=for-the-badge
-[stars-url]: https://github.com/wakjoko/simple-user-app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/wakjoko/simple-user-app.svg?style=for-the-badge
-[issues-url]: https://github.com/wakjoko/simple-user-app/issues
-[license-shield]: https://img.shields.io/github/license/wakjoko/simple-user-app.svg?style=for-the-badge
-[license-url]: https://github.com/wakjoko/simple-user-app/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/wakjoko/simple-user-stats.svg?style=for-the-badge
+[contributors-url]: https://github.com/wakjoko/simple-user-stats/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wakjoko/simple-user-stats.svg?style=for-the-badge
+[forks-url]: https://github.com/wakjoko/simple-user-stats/network/members
+[stars-shield]: https://img.shields.io/github/stars/wakjoko/simple-user-stats.svg?style=for-the-badge
+[stars-url]: https://github.com/wakjoko/simple-user-stats/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wakjoko/simple-user-stats.svg?style=for-the-badge
+[issues-url]: https://github.com/wakjoko/simple-user-stats/issues
+[license-shield]: https://img.shields.io/github/license/wakjoko/simple-user-stats.svg?style=for-the-badge
+[license-url]: https://github.com/wakjoko/simple-user-stats/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wakjoko
 [AdonisJS.com]: https://img.shields.io/badge/adonisjs-%23220052.svg?style=for-the-badge&logo=adonisjs&logoColor=white
