@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "node ace serve --watch",
-        "build": "node ace migration:run --force && node ace build --production",
+        "build": "node ace migration:fresh --force && node ace build --production",
         "start": "node ./build/server.js",
         "postbuild": "node ace generate:manifest && node ace swagger:generate && cp -a docs/ build/docs"
     },
