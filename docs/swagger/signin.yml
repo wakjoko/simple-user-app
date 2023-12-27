@@ -12,13 +12,11 @@
               properties:
                 email:
                   type: string
-                  # example: 'johndoe@aha-assessment.test'
-                  example: 'wakjoko@gmail.com'
+                  example: 'johndoe@simple-user-stats.test'
                   required: true
                 password:
                   type: string
-                  # example: 'johndoe'
-                  example: 'a'
+                  example: 'johndoe'
                   required: true
     responses:
       200:

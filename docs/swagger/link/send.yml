@@ -11,7 +11,7 @@
               properties:
                 email:
                   type: string
-                  example: 'johndoe@aha-assessment.test'
+                  example: 'johndoe@simple-user-stats.test'
                   required: true
     responses:
       200:

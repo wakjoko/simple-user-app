@@ -20,7 +20,7 @@ export default {
 		definition: {
 			openapi: '3.0.0',
 			info: {
-				title: 'Aha Assessment',
+				title: 'Simple User Stats',
 				version: '1.0.0',
 				description: 'API docs'
 			},

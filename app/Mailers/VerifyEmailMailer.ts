@@ -28,7 +28,7 @@ export default class VerifyEmailMailer extends BaseMailer {
 
     message
       .subject('Please Verify Your Email')
-      .from('noreply@aha-assessment.test')
+      .from('noreply@simple-user-stats.test')
       .to(this.email)
       .html(`
         Please click the following link to verify your email
